@@ -15,3 +15,13 @@ def a(b: list) -> list:
 
 
 # --- test function ---
+
+
+def test_a():
+    assert a([1, 2, 3]) == [3, 2, 1]
+    assert a(["a", "b", "c"]) == ["c", "b", "a"]
+    assert a([]) == []
+    print("All test cases passed")
+
+
+test_a()
